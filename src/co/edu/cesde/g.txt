@@ -84,4 +84,59 @@ System.out.println("ingrese la cantidad de posiciones: ");
         System.out.println("El promedio de los estudiantes en general es: "+average/students);
 
 
+        ----------------------------------------------------------------------------------------------
+
+          public static void main(String[] args) {
+        	Scanner inputData = new Scanner(System.in);
+            int numStudents=2;
+
+                Student[] students = new Student[numStudents];
+                for (int i = 0; i <students.length; i++) {
+
+                    Student person = new Student();
+                    System.out.println("ingrese el nombre: ");
+                    person.setName(inputData.nextLine());
+                    System.out.println("ingrese la identificacion: ");
+                    person.setIdentification(inputData.nextLine());
+
+                    students[i] = person;
+                }
+                for (int i = 0; i <numStudents; i++) {
+
+                    System.out.println(students[i].getName());
+                    System.out.println(students[i].getIdentification());
+                }
+                }
+            }
+
+
+
+
+
+        -----------------------------------------------------------------------------------------------
+
+        public static void main(String[] args) {
+        	Scanner inputData = new Scanner(System.in);
+            int numStudents=2;
+
+                List<Student> students = new ArrayList<>();
+                for (int i = 0; i < students.size(); i++) {
+
+                    Student person = new Student();
+                    System.out.println("ingrese el nombre: ");
+                    person.setName(inputData.nextLine());
+                    System.out.println("ingrese la identificacion: ");
+                    person.setIdentification(inputData.nextLine());
+
+                     students.add(person);
+                }
+                for (int i = 0; i <numStudents; i++) {
+
+                    System.out.println(students.get(i).getName());
+                    System.out.println(students.get(i).getIdentification());
+                }
+                }
+            }
+
+
 
